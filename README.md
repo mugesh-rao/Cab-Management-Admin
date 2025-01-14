@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Cab Management System for IT Employees and Customer Assignments
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Cab Management System** is a platform designed to manage the transportation of IT employees and customers by assigning them to driver employees efficiently. The platform is built using the **MERN stack** (MongoDB, Express, React, Node.js), **Firebase** for authentication, **Serverless Functions** for backend tasks, and **WhatsApp API** for communication.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Employee and Customer Management**: Manage employee and customer profiles, including assignment details.
+- **Driver Assignment**: Assign IT employees and customers to available drivers based on their location and availability.
+- **Real-Time Updates**: Real-time updates and notifications through Firebase for driver status, customer bookings, and employee assignment.
+- **WhatsApp Communication**: Integration with the **WhatsApp API** to notify employees, customers, and drivers about their assignments and statuses.
+- **Serverless Backend**: Use of **Serverless Functions** to handle backend tasks, reducing infrastructure overhead and enhancing scalability.
+- **Admin Panel**: Admin panel to manage employee and customer details, view booking history, and track drivers in real-time.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**:
+  - **React**: For building the user interface.
+  - **TailwindCSS**: For styling the application.
+  - **React Router**: For navigation between different views (Admin, Employee, Customer).
+  - **Axios**: For making API requests to the backend.
+  
+- **Backend**:
+  - **Node.js** and **Express**: For building the REST API to manage the cab assignments and driver details.
+  - **Firebase**: For user authentication, real-time database updates, and notifications.
+  - **Serverless Functions**: For handling asynchronous backend tasks like sending WhatsApp notifications or assigning drivers dynamically.
+  - **WhatsApp API**: For sending communication notifications to employees, customers, and drivers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Database**:
+  - **MongoDB**: For storing employee, customer, driver, and booking details.
 
-### `npm test`
+## Features and Workflow
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Admin Dashboard**:
+   - View all employee and customer details.
+   - Assign drivers to employees or customers.
+   - Track the status of assignments in real-time.
 
-### `npm run build`
+2. **Employee and Customer Interaction**:
+   - Employees and customers can book cabs from the dashboard.
+   - Once a booking is made, the system automatically assigns an available driver based on proximity and availability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Real-Time Updates**:
+   - Use **Firebase** to provide real-time updates to both customers and drivers about their ride status (assigned, in-progress, completed).
+   
+4. **WhatsApp Notifications**:
+   - WhatsApp API is used to send booking confirmations, assignment updates, and notifications to employees, customers, and drivers.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/mugesh-rao/cab-management-system.git
